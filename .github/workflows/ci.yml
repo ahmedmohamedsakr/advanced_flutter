@@ -6,7 +6,7 @@ jobs:
     steps:
     - run: "echo Job ${{github.job}}"
   job_2:
-    runs-on: [ubuntu-latest]
+    runs-on: [ubuntu-latest,windows-latest,macos-latest]
     needs: [job_1]
     steps:
     - run: "echo Job ${{github.job}}"
